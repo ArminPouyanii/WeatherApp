@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import com.armin.weatherapplication.api.ApiWeatherApp
 import com.armin.weatherapplication.model.response.CurrentWeatherResponse
+import com.armin.weatherapplication.utils.RetrofitConnection
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,14 +20,15 @@ const val lat="34.31"
 const val AppId="10e6644f562878ec1f3babe9478ec058"
 class   MainActivity : AppCompatActivity() {
     private var TAG="mainActivity"
-
+     private var response=RetrofitConnection()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
             val btn=findViewById<Button>(R.id.btn_check)
 
             btn.setOnClickListener {
-                getResponse()
+                response.serverData()
             }
 
     }

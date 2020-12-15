@@ -7,6 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:paddingTop="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:id="@+id/txtLon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+       android:layout_below="@id/txtLon"
+        android:id="@+id/txtLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingTop="20px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_below="@id/txtLat"
+        android:id="@+id/txtAdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/btn_check"
         android:layout_width="wrap_content"

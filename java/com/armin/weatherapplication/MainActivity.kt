@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import com.armin.weatherapplication.controller.ControllerWeather
 import com.armin.weatherapplication.controller.RetrofitConnection
 import com.armin.weatherapplication.view.IShowData
 

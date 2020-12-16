@@ -1,11 +1,9 @@
-package com.armin.weatherapplication.api
+package com.armin.weatherapplication.model.api
 
 import com.armin.weatherapplication.model.response.CurrentWeatherResponse
-import com.armin.weatherapplication.model.response.Main
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
-import java.util.zip.Deflater
 
 
 const val Api_Key="10e6644f562878ec1f3babe9478ec05"
